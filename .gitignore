@@ -1,0 +1,34 @@
+# --- Lingkungan & Cache ---
+env/
+venv/
+.venv/
+.env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+
+# --- Data Mentah ---
+# Abaikan semua file di dalam folder raw_data
+raw_data/*
+*.json
+*.json.gz
+# KECUALI file README.md ini!
+!raw_data/README.md
+
+# --- Data CSV ---
+
+*.csv
+!book_list.csv
+
+# --- Folder Models ---
+
+# --- Konfigurasi & IDE ---
+.streamlit/secrets.toml
+secrets.toml
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+frontend/node_modules/
