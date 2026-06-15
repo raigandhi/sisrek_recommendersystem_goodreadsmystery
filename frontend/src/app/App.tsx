@@ -30,7 +30,7 @@ export default function App() {
     // 1. Ambil Metadata (Judul dan Genre) untuk Dropdown
     const fetchMetadata = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/metadata");
+        const res = await fetch("https://raigandhi-sisrek-recommendersystem-goodreadsmystery.hf.space/api/metadata");
         const data = await res.json();
         if (data.status === "success") {
           setAvailableTitles(data.titles);
@@ -45,7 +45,7 @@ export default function App() {
     // 2. Ambil Buku Top-Rated untuk tampilan awal Beranda (tanpa filter)
     const fetchInitialBooks = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/recommend?limit=100");
+        const res = await fetch("https://raigandhi-sisrek-recommendersystem-goodreadsmystery.hf.space/api/recommend?limit=100");
         const data = await res.json();
         if (data.status === "success") {
           setRealBooks(data.data);
