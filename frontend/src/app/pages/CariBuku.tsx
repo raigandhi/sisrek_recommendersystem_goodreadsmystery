@@ -43,7 +43,7 @@ export function CariBuku({
     setIsLoading(true);
 
     try {
-      const url = new URL("http://127.0.0.1:8000/api/recommend");
+      const url = new URL("https://raigandhi-sisrek-recommendersystem-goodreadsmystery.hf.space/api/recommend");
       if (targetTitle) url.searchParams.append("title", targetTitle);
       url.searchParams.append("target_genre", targetGenre);
 
